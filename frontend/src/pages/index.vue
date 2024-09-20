@@ -63,9 +63,9 @@ export default defineComponent({
           // Redirect to dashboard page
           router.push('/home');
         }
-      } catch (error) {
-        console.log(error.message)
-      }
+      }catch (error: any) {
+          console.log(error.message)
+        }
     };
 
     return {
