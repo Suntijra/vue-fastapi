@@ -45,6 +45,14 @@ optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
 
 [[package]]
+name = "et-xmlfile"
+version = "1.1.0"
+description = "An implementation of lxml.xmlfile for the standard library"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "exceptiongroup"
 version = "1.2.2"
 description = "Backport of PEP 654 (exception groups)"
@@ -90,6 +98,17 @@ python-versions = ">=3.6"
 
 [package.extras]
 all = ["ruff (>=0.6.2)", "mypy (>=1.11.2)", "pytest (>=8.3.2)", "flake8 (>=7.1.1)"]
+
+[[package]]
+name = "openpyxl"
+version = "3.1.5"
+description = "A Python library to read/write Excel 2010 xlsx/xlsm files"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+et-xmlfile = "*"
 
 [[package]]
 name = "pydantic"
@@ -171,17 +190,19 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "23e104758ebac2bed13589bd51d11cc3e7c1b19b6d18dd0f943d1a97d6317e96"
+content-hash = "ae0e378de049f29211aeacb7dee12a6c5108ee44de311cc1ecd99dbee49075f5"
 
 [metadata.files]
 annotated-types = []
 anyio = []
 click = []
 colorama = []
+et-xmlfile = []
 exceptiongroup = []
 fastapi = []
 h11 = []
 idna = []
+openpyxl = []
 pydantic = []
 pydantic-core = []
 sniffio = []
